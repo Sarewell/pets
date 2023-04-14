@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    scroll-behavior: smooth;
+    --header-height: 50px;
+    --clr-bg-wht : #fff;
+    --clr-bg-bleu : #343c64;
+    --clr-bg-darkbleu : #202332;
+    --clr-bg-rose : #e88872;
+    --clr-bg-lightgray : #d7dfe1;
+    --clr-bg-blueonglets : #22273a;
+    --clr-txt-primary : #000;
+    --clr-txt-secondary : #fff;
+    --clr-txt-rose : #e88872;
+    --clr-bg-hero : #69708e;
+    --gap-primary : 2rem;
+}
+body{
+    font-family: 'Arvo', serif;
+}
+button{
+    text-transform: uppercase;
+    padding: 2rem;
+    color: var(--clr-txt-primary);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5rem;
+    background-color: var(--clr-bg-rose);
+    margin:1rem 0;
+}
+main section{
+    padding:4rem 0;
+}
+main img{
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+/* helper classes */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.gap{
+    gap: 2rem;
+}
+.flex {
+    display: flex;
+}
+
+/* css header */
+header{
+    background-color: var(--clr-bg-darkbleu);
+    color: var(--clr-txt-secondary);
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0.3rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+header img{
+    height: 100%;
+}
+header #menu_content{
+    position: absolute;
+    top: -200px;
+}
+header ul li{
+    list-style: none;
+}
+header i{
+    font-size: 2rem;
+}
+/* hero css */
+main #hero {
+    background-image: url(../img/toutou-memere.jpg);
+    background-color: var(--clr-bg-hero);
+    background-blend-mode:multiply;
+    height: calc(100vh - var(--header-height));
+    background-position: center;
+    background-size: cover;
+    color: var(--clr-txt-secondary);
+    text-align: center;
+    position: top var(--header-height); left: 0px;
+}
+main #hero_content h2{
+    font-size: 2rem;
+}
+main #hero_content p{
+    padding: 2rem;
+    font-size: 1rem;
+}
+/* css section engagement */
+main #engagement{
+    background-color: var(--clr-bg-lightgray);
+}
+main #engagement .card{
+    text-align: center;
+    background-color: var(--clr-bg-wht);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 5px;
+    min-width: 275px;
+    max-width: 400px;
+
+
+}
+main #engagement i{
+    background-color: var(--clr-bg-bleu);
+    color: var(--clr-txt-secondary);
+    padding: 1.5rem;
+    border-radius: 100%;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+main #engagement h3{
+    color: var(--clr-txt-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+main #engagement p{
+    margin-bottom: 2rem;
+    color: var(--clr-txt-primary);
+    padding: 2rem;
+}
+main #engagement hr{
+    height: 10px;
+    background-color: var(--clr-bg-rose);
+}
+/* story css */
+main #story{
+    background-color: var(--clr-bg-bleu);
+    color: var(--clr-txt-secondary);
+
+}
+main #onglets{
+    background-color: var(--clr-bg-darkbleu);
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+main #onglets p{
+    background-color: var(--clr-bg-blueonglets);
+    padding: 0.5rem;
+}
+main #story h4{
+    font-weight: 400;
+    padding: 1rem 0;
+    border: solid;
+    border-color: var(--clr-bg-bleu);
+    padding: 0.5rem;
+}
+main #ourCompagny p{
+    display: none;
+}
+main #ourMaterials p{
+    display: none;
+}
+main #story h4:hover{
+    color: var(--clr-bg-rose);
+    border: none;
+}
+/* css featured products */
+main #product{
+    background-color: var(--clr-bg-wht);
+    text-align: center;
+}
+main #product h3{
+    color: var(--clr-txt-rose);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+/* css formulaire */
+main #formulaire{
+    background-color: var(--clr-bg-bleu);
+    
+}
+main #formulaire form{
+    width: 100%;
+    max-width: 700px;
+
+}
+main #formulaire label{
+    color: var(--clr-txt-secondary);
+}
+main #formulaire h2{
+    color: var(--clr-txt-secondary);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+main #formulaire input{
+    width: 100%;
+    color: var(--clr-txt-primary);
+}
+main #formulaire button{
+    width: 100%;
+}
+/* css footer */
+footer{
+    text-align: center;
+    padding: 2rem;
+    color: var(--clr-txt-secondary);
+    background-color: var(--clr-bg-darkbleu);
+}

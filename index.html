@@ -1,0 +1,169 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>pet-shop</title>
+</head>
+<body>
+    <!-- header backround bleu foncer -->
+    <header class="flex">
+        <div>
+            <img src="./img/pet-shop-logo.png" alt="logo pet shop" id="logo">
+        </div>
+        <nav id="menu">
+            <i class="fa-solid fa-bars" id="burger_menu"></i>
+            <div id="menu_content">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Shop</li>
+                    <li>News-letter</li>
+                    <li>Search</li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+
+    </header>
+    <main>
+        <!-- hero avec background image -->
+        <section id="hero" class="flexcenter">
+            <div id="hero_content">
+                <h2>Discover the finest products for your pet</h2>
+                <p>A beautifully simple starter site with CSS integration</p>
+                <button>go to shop <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            
+        </section>
+        <!-- Deuxieme section avec 3 cards background gris clair -->
+        <section id="engagement">
+            <!-- card pet-friendly -->
+            <div class="container flexwrap gap">
+                <div class="card">
+                    <i class="fa-solid fa-paw"></i>
+                    <h3>Pet-friendly Material</h3>
+                    <p>We care about your pet as you do, and deliver the finest materials</p>
+                    <hr>
+                </div>
+                <!-- card free shipping -->
+                <div  class="card">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>We care about your pet as you do, and deliver the finest materials</p>
+                    <hr>
+                </div>
+                <!-- flexible payment -->
+                <div class="card">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <h3>Flexible Payment</h3>
+                    <p>We care about your pet as you do, and deliver the finest materials</p>
+                    <hr>
+                </div>
+            </div>
+            
+        </section>
+        <!-- section histoire background bleu -->
+        <section id="story">
+            <div class="container">
+                <img src="./img/toutou1.jpg" alt="chien assis">
+                <div>
+                    <h3>We have been on business since 1995</h3>
+                    <p>We love pets, so we have created a shop that lets you get premium-quality products for you little friends</p>
+                    <!-- trois onglets avec un seul des trois contenue afficher backround bleu foncer-->
+                    <div id="onglets">
+                        <!-- our values -->
+                        <div id="ourValues">
+                            <h4>Our values</h4>
+                            <p>Show pony anti-pattern, for it's a simple lift and shift job the right info at the right time to the right people anti-pattern. Ping me table the discussion, so teams were able to drive adoption and awarness nor innovation is hot right now reach out</p>
+                        </div>
+                        <!-- our compagny -->
+                        <div id="ourCompagny">
+                            <h4>Our Compagny</h4>
+                            <p></p>
+                        </div>
+                        <!-- our materials -->
+                        <div id="ourMaterials">
+                            <h4>Our Materials</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- featured products avec 3 cards -->
+        <section id="product" class="container">
+            <!-- titre -->
+            <h2>Featured products</h2>
+            <!-- trait -->
+            <hr>
+            <!-- cards -->
+            <div class="flexwrap">
+                <!-- banana sweater -->
+                <div>
+                    <img src="./img/toutou2.webp" alt="banana">
+                    <h3>Banana Sweater</h3>
+                    <p>€23.00</p>
+                    <button>add to cart</button>
+                </div>
+                <!-- dog yellow sweater -->
+                <div>
+                    <img src="./img/toutou3.webp" alt="sweater">
+                    <h3>Dog Yellow Sweater</h3>
+                    <p>€44.00</p>
+                    <button>add to cart</button>
+                </div>
+                <!-- cute little puppy sweater -->
+                <div>
+                    <img src="./img/toutou4.webp" alt="puppy">
+                    <h3>Cute little puppy Sweater</h3>
+                    <p>€65.00</p>
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <!-- button -->
+            <button>browse all products</button>
+        </section>
+        <!-- formulaire background bleu -->
+        <section id="formulaire">
+            <div class="container">
+                <h2>Join our newsletter for special deals and offers</h2>
+                <!-- div flex -->
+                <div class="flexwrap">
+                    <!-- formulaire -->
+                    <form action="">
+                        <div>
+                            <p><label for="">Name</label></p>
+                            <input type="text" placeholder="your name">
+                        </div>
+                        <div>
+                            <p><label for="">Email</label></p>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        
+                        <button type="submit">join newsletter</button>
+                    </form>
+                    <!-- image -->
+                    <img src="./img/coco.webp" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer background bleu foncer -->
+    <footer>
+        <p>Made with <i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i>,HTML and CSS</p>
+    </footer>
+
+<script src="./js/scripts.js"></script>   
+</body>
+</html>
