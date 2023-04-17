@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: solid 1px red;
 }
 :root {
     scroll-behavior: smooth;
@@ -78,10 +79,16 @@ header{
 }
 header img{
     height: 100%;
+    max-width: 100%;
 }
-header #menu_content{
+header #menu__content{
     position: absolute;
-    top: -200px;
+    top: var(--header-height);
+    right: 5px;
+    background-color: var(--clr-bg-bleu);
+    padding: 10px;
+    display: none;
+    font-size: 1.1rem;
 }
 header ul li{
     list-style: none;
@@ -89,6 +96,12 @@ header ul li{
 header i{
     font-size: 2rem;
 }
+header #menu__content.active {
+
+    display: block;
+}
+
+
 /* hero css */
 main #hero {
     background-image: url(../img/toutou-memere.jpg);
@@ -99,7 +112,7 @@ main #hero {
     background-size: cover;
     color: var(--clr-txt-secondary);
     text-align: center;
-    position: top var(--header-height); left: 0px;
+    top:0px; left: 0px;
 }
 main #hero_content h2{
     font-size: 2rem;
@@ -118,7 +131,7 @@ main #engagement .card{
     margin-top: 4rem;
     margin-bottom: 4rem;
     border-radius: 5px;
-    min-width: 275px;
+    /* min-width: 275px; */
     max-width: 400px;
 
 
@@ -177,7 +190,7 @@ main #ourMaterials p{
 }
 main #story h4:hover{
     color: var(--clr-bg-rose);
-    border: none;
+    border-color: transparent;
 }
 /* css featured products */
 main #product{
@@ -210,6 +223,7 @@ main #formulaire h2{
 main #formulaire input{
     width: 100%;
     color: var(--clr-txt-primary);
+    padding: 0.5rem;
 }
 main #formulaire button{
     width: 100%;
@@ -220,4 +234,73 @@ footer{
     padding: 2rem;
     color: var(--clr-txt-secondary);
     background-color: var(--clr-bg-darkbleu);
+}
+@media (min-width: 900px) {
+    #burger__menu {
+        display: none;
+    }
+    header #menu__content{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        background-color: transparent;
+        z-index: 2;
+    }
+    header #menu__content ul{
+        display: flex;
+        gap: 1rem;
+        position: initial;
+        
+    }
+    main #story_content{
+        display: flex;
+        gap: 2rem; 
+    }
+    main #story_content img{
+        margin: 0;
+    }
+    main #story_text{
+        height: 532px;
+        
+    }
+    main #onglets{
+        position: relative;
+        background-color: var(--clr-bg-blueonglets);
+        height: 410px;
+    
+    
+    }
+    main #onglets h4{
+        font-size: 1.5vmax;
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        width: 33%;
+        padding: 1rem;
+        margin-top: 1rem;
+        background-color: var(--clr-bg-blueonglets);
+    
+    }
+    main #onglets p{
+        font-size: 1.5vmax;
+        position: absolute;
+        padding: 1rem;
+        margin: 2%;
+        top: 90px;
+        left: 0;
+        
+        background-color: var(--clr-bg-blueonglets);
+    }
+    main #ourCompagny h4{
+        top: 0;left: 33%;
+
+    }
+    main #ourMaterials h4{
+        top: 0; left: 66%;
+    
+    }
+
+
+
 }
